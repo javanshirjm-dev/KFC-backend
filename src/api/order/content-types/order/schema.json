@@ -38,7 +38,8 @@
         "delivered",
         "cancelled"
       ],
-      "default": "pending"
+      "default": "pending",
+      "required": true
     }
   }
 }

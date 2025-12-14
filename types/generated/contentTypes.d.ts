@@ -650,6 +650,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     status: Schema.Attribute.Enumeration<
       ['pending', 'confirmed', 'shipped', 'delivered', 'cancelled']
     > &
+      Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'pending'>;
     total: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;
