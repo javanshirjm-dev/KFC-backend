@@ -29,15 +29,16 @@
     "total": {
       "type": "decimal"
     },
-    "statusname": {
+    "status": {
       "type": "enumeration",
       "enum": [
         "pending",
-        "delivered",
-        "cancelled",
         "confirmed",
-        "coming..."
-      ]
+        "shipped",
+        "delivered",
+        "cancelled"
+      ],
+      "default": "pending"
     }
   }
 }
